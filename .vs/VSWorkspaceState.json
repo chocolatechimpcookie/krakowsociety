@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\KrakowCore",
+    "\\KrakowCore\\KrakowCore",
+    "\\KrakowCore\\KrakowCore\\Controllers",
+    "\\KrakowCore\\KrakowCore\\Models",
+    "\\KrakowCore\\KrakowCore\\obj",
+    "\\KrakowCore\\KrakowCore\\Views",
+    "\\KrakowCore\\KrakowCore\\Views\\Home",
+    "\\KrakowCore\\KrakowCore\\Views\\Shared"
+  ],
+  "SelectedNode": "\\KrakowCore\\KrakowCore.sln",
+  "PreviewInSolutionExplorer": false
+}
