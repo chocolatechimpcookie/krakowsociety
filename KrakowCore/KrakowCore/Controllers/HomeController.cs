@@ -17,7 +17,9 @@ namespace KrakowCore.Controllers
 
         public IActionResult SocietyPage()
         {
-            return View();
+            var model = new SocietyPageModel { Checker = "Pizza" }; 
+
+            return base.View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
