@@ -9,6 +9,11 @@ namespace KrakowCore.Models
     {
        public string Checker { get; set; }
 
+        //public IList<IList<Object>> SheetValues { get; set; }
+
         public IList<IList<Object>> SheetValues { get; set; }
+
+        //public List
+
     }
 }

@@ -66,10 +66,26 @@ namespace KrakowCore.Controllers
             ValueRange response = request.Execute();
             IList<IList<Object>> SheetValues = response.Values;
 
+            // 
 
 
+            Debug.WriteLine("START SHEET VALUES");
 
+            Debug.WriteLine(SheetValues);
 
+            if (SheetValues != null && SheetValues.Count > 0)
+            {
+                Debug.WriteLine("Name, Major");
+                foreach (var row in SheetValues)
+                {
+                    // Print columns A and E, which correspond to indices 0 and 4.
+                    Debug.WriteLine("{0}, {1}", row[0], row[1]);
+                }
+            }
+            else
+            {
+                Debug.WriteLine("No data found.");
+            }
 
             var model = new SocietyPageModel { Checker = "pizza" }; 
 
