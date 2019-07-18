@@ -2,16 +2,16 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "Lambda2Js.Signed/3.1.3": {
+      "Lambda2Js/3.0.1": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1"
         },
         "compile": {
-          "lib/netstandard1.0/Lambda2Js.Signed.dll": {}
+          "lib/netstandard1.0/Lambda2Js.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.0/Lambda2Js.Signed.dll": {}
+          "lib/netstandard1.0/Lambda2Js.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -2736,7 +2736,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/12.0.2": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -2758,26 +2758,23 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "RavenDB.Client/4.2.2": {
+      "RavenDB.Client/4.0.0-rc-40023": {
         "type": "package",
         "dependencies": {
-          "Lambda2Js.Signed": "3.1.3",
-          "Microsoft.CSharp": "4.5.0",
-          "Newtonsoft.Json": "12.0.2",
-          "System.Buffers": "4.5.0",
-          "System.Memory": "4.5.3",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
-          "System.Security.Cryptography.Cng": "4.5.0",
-          "System.Threading.Tasks.Extensions": "4.5.3"
+          "Lambda2Js": "3.0.1",
+          "Microsoft.CSharp": "4.4.0",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Runtime.CompilerServices.Unsafe": "4.4.0",
+          "System.Security.Cryptography.Cng": "4.4.0",
+          "System.Threading.Tasks.Extensions": "4.4.0"
         },
         "compile": {
-          "lib/netcoreapp2.1/Raven.Client.dll": {},
-          "lib/netcoreapp2.1/Sparrow.dll": {}
+          "lib/netstandard2.0/Raven.Client.dll": {},
+          "lib/netstandard2.0/Sparrow.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.1/Raven.Client.dll": {},
-          "lib/netcoreapp2.1/Sparrow.dll": {}
+          "lib/netstandard2.0/Raven.Client.dll": {},
+          "lib/netstandard2.0/Sparrow.dll": {}
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -3489,7 +3486,7 @@
           "lib/netstandard1.3/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Memory/4.5.3": {
+      "System.Memory/4.5.1": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -3750,7 +3747,7 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -4281,7 +4278,7 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.3": {
+      "System.Threading.Tasks.Extensions/4.5.1": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -4476,20 +4473,17 @@
     }
   },
   "libraries": {
-    "Lambda2Js.Signed/3.1.3": {
-      "sha512": "il7KgdZ5f5+zUftegjGIk0mpcJCDUavNXPPmjgJyAN57aJesKEj1yL0X+iwIoOBdjN49kutsM9EyaZu0+t+34w==",
+    "Lambda2Js/3.0.1": {
+      "sha512": "FAsPeN4p9V+bHmwYaf6lGNJxSbcVm2U+Kdkx9lSx2nFX3EfY1ICFVEzcI94Zdufd0tqwpi1xKhjGQaj7Fm4uLw==",
       "type": "package",
-      "path": "lambda2js.signed/3.1.3",
+      "path": "lambda2js/3.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.txt",
-        "lambda2js.signed.3.1.3.nupkg.sha512",
-        "lambda2js.signed.nuspec",
-        "lib/net40/Lambda2Js.Signed.dll",
-        "lib/net40/Lambda2Js.Signed.xml",
-        "lib/netstandard1.0/Lambda2Js.Signed.dll",
-        "lib/netstandard1.0/Lambda2Js.Signed.xml"
+        "lambda2js.3.0.1.nupkg.sha512",
+        "lambda2js.nuspec",
+        "lib/net40/Lambda2Js.dll",
+        "lib/netstandard1.0/Lambda2Js.dll"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -7385,10 +7379,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.2": {
-      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.2",
+      "path": "newtonsoft.json/11.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7411,7 +7405,7 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
       ]
     },
@@ -7430,18 +7424,18 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "RavenDB.Client/4.2.2": {
-      "sha512": "m77zhlhFLyGZ5lg+8PiLpkN2Dddo7b8gugE+UUI3nsuOQKjM9O+IVXrs1T/QkGHnqqXJ1/Y3N38PKkAxC66vxg==",
+    "RavenDB.Client/4.0.0-rc-40023": {
+      "sha512": "6E8mlk2nr442KONe0di/oIYaYVFTl6BD7vS/TXZSWc/oIKVZBaZWTw+mOlmL3Kjg4UOMtj0cnMMhO5aMr0yzUw==",
       "type": "package",
-      "path": "ravendb.client/4.2.2",
+      "path": "ravendb.client/4.0.0-rc-40023",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/netcoreapp2.1/Raven.Client.dll",
-        "lib/netcoreapp2.1/Sparrow.dll",
+        "lib/netstandard1.3/Raven.Client.dll",
+        "lib/netstandard1.3/Sparrow.dll",
         "lib/netstandard2.0/Raven.Client.dll",
         "lib/netstandard2.0/Sparrow.dll",
-        "ravendb.client.4.2.2.nupkg.sha512",
+        "ravendb.client.4.0.0-rc-40023.nupkg.sha512",
         "ravendb.client.nuspec"
       ]
     },
@@ -9348,10 +9342,10 @@
         "system.linq.queryable.nuspec"
       ]
     },
-    "System.Memory/4.5.3": {
-      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+    "System.Memory/4.5.1": {
+      "sha512": "sDJYJpGtTgx+23Ayu5euxG5mAXWdkDb4+b0rD0Cab0M1oQS9H0HXGPriKcqpXuiJDTV7fTp/d+fMDJmnr6sNvA==",
       "type": "package",
-      "path": "system.memory/4.5.3",
+      "path": "system.memory/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -9363,7 +9357,11 @@
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.3.nupkg.sha512",
+        "ref/netstandard1.1/System.Memory.dll",
+        "ref/netstandard1.1/System.Memory.xml",
+        "ref/netstandard2.0/System.Memory.dll",
+        "ref/netstandard2.0/System.Memory.xml",
+        "system.memory.4.5.1.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -10215,10 +10213,10 @@
         "system.runtime.nuspec"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
-      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "sha512": "Zh8t8oqolRaFa9vmOZfdQm/qKejdqz0J9kr7o2Fu0vPeoH3BL1EOXipKWwkWtLT1JPzjByrF19fGuFlNbmPpiw==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -10234,7 +10232,7 @@
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -11652,10 +11650,10 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "System.Threading.Tasks.Extensions/4.5.3": {
-      "sha512": "+MvhNtcvIbqmhANyKu91jQnvIRVSTiaOiFNfKWwXGHG48YAb4I/TyH8spsySiPYla7gKal5ZnF3teJqZAximyQ==",
+    "System.Threading.Tasks.Extensions/4.5.1": {
+      "sha512": "WSKUTtLhPR8gllzIWO2x6l4lmAIfbyMAiTlyXAis4QBDonXK4b4S6F8zGARX4/P8wH3DH+sLdhamCiHn+fTU1A==",
       "type": "package",
-      "path": "system.threading.tasks.extensions/4.5.3",
+      "path": "system.threading.tasks.extensions/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11677,11 +11675,15 @@
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
         "ref/netcoreapp2.1/_._",
+        "ref/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "ref/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "ref/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "ref/netstandard2.0/System.Threading.Tasks.Extensions.xml",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.extensions.4.5.3.nupkg.sha512",
+        "system.threading.tasks.extensions.4.5.1.nupkg.sha512",
         "system.threading.tasks.extensions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -12129,7 +12131,7 @@
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
-      "RavenDB.Client >= 4.2.2"
+      "RavenDB.Client >= 4.0.0-rc-40023"
     ]
   },
   "packageFolders": {
@@ -12192,7 +12194,7 @@
           },
           "RavenDB.Client": {
             "target": "Package",
-            "version": "[4.2.2, )"
+            "version": "[4.0.0-rc-40023, )"
           }
         },
         "imports": [

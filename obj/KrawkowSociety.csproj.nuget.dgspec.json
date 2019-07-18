@@ -60,7 +60,7 @@
             },
             "RavenDB.Client": {
               "target": "Package",
-              "version": "[4.2.2, )"
+              "version": "[4.0.0-rc-40023, )"
             }
           },
           "imports": [
