@@ -10,6 +10,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using KrawkowSociety.Models;
+using Microsoft.Extensions.Logging;
+
+using Raven.Client.Documents;
 
 namespace KrawkowSociety
 {
@@ -20,11 +23,16 @@ namespace KrawkowSociety
             Configuration = configuration;
         }
 
+        //private readonly ILogger<Startup> _logger;
+
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //this._logger = logger;
+            //this._logger.LogInformation("startupppppppppppppppppppppppppppppppp");
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -32,8 +40,13 @@ namespace KrawkowSociety
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddOptions();
             services.Configure<RavenSettings>(Configuration.GetSection("Raven"));
             services.AddSingleton<IDocumentStoreHolder, DocumentStoreHolder>();
+
+            //talk data services, these have to be written out
+            //services.AddSingleton<InMemoryTalkService, InMemoryTalkService>();
+            //services.AddTransient
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
